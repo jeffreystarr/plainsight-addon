@@ -1,5 +1,6 @@
 Hide in Plain Sight
-A Mozilla Firefox for Steganographic Encryption
+===================
+*A Mozilla Firefox for Steganographic Encryption*
 
 What does it do?
 ================
