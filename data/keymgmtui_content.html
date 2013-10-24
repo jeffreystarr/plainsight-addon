@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hide in Plain Sight Add-on Key Management</title>
+    <link type="text/css" rel='stylesheet' href="bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+    <h1>About Keys</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p>When you hide text, that text is replaced with phrases taken from your key. Similarly, when you unhide
+            text, this <strong>Hide in Plain Sight</strong> add-on reconstructs the original text from the encoded text.</p>
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p>The key must be shared between all the parties you intend to share that message. A single key may be
+            re-used for multiple messages. However, you <em>must</em> keep your keys secret. If the key is discovered by the
+            bad guys, they can decode your previous messages.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p>Keys are generated from a source text. The source text should be moderate in size: try something a couple
+            of chapters in length. You specify the key by providing a URL to its location. The file is downloaded only
+            once during generation and the computed key value is then stored on your computer. Make sure the page does not change between
+            you and your other parties key generation! You can reference a local file using a file: URL.</p>
+        </div>
+    </div>
+
+    <h1>Existing Keys</h1>
+
+    <ol id="existing-keys-list">
+        <li>Loading list of keys...</li>
+    </ol>
+
+    <h1>Generate a New Key</h1>
+
+    <form id="form-generate-new-key" method="post" accept-charset="utf-8">
+        <div class="form-group">
+            <label for="key-name">Name this key:</label>
+            <input class="form-control" type="text" name="key-name" id="key-name" />
+        </div>
+
+        <div class="form-group">
+            <label for="source-url">Source Text URL:</label>
+            <input class="form-control" type="url" name="source-url" id="source-url" placeholder="http://www.example.com" />
+        </div>
+
+        <button class="btn btn-default" type="submit" name="Submit">Generate New Key</button>
+
+    </form>
+
+    <h1>Status</h1>
+
+    <p id="submit-feedback">No status to report</p>
+
+</div>
+
+</body>
+</html>

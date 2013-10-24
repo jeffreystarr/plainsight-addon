@@ -1,0 +1,12 @@
+{
+  "name": "plainsight-addon",
+  "fullName": "Hide in Plain Sight",
+  "id": "jid1-ALf5tILbQWpY9g",
+  "description": "Encrypts text into human-looking text using steganography",
+  "author": "ℤ→ℤ Technologies (www.ztoztechnologies.com) <jeffrey.starr@ztoztechnologies.com>",
+  "license": "MPL 2.0",
+  "version": "0.5",
+  "homepage": "http://www.ztoztechnologies.com/plainsight/",
+  "icon": "data/plainsight_icon48.png",
+  "icon64": "data/plainsight_icon64.png"
+}
